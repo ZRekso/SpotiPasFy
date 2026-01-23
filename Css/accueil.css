@@ -225,8 +225,8 @@ nav{
     border-radius: 5px;
     background-color: rgba(83, 90, 97, 0.22);
     width: 35%;
-    height: 8vh;
     cursor: pointer;
+    height: auto;
 }
 
 .container-tendance div:hover{
@@ -274,11 +274,37 @@ audio{
     }
     .container-tendance div{
         flex-wrap: wrap;
-        height: auto;
     }
-    
+    .container-deux .container-playlist img{
+        width: 18vh;
+    }
+    .container-deux{
+        margin-bottom: 100px;
+    }
 }
 
+@media (max-width: 600px) {
+    .container-tendance div{
+        display: none;
+    }
+    #welcome, h2{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    #audio{
+        width: 35vh;
+        height: 4vh;
+    }
+
+    .album p{
+        font-size: 1.8vh;
+    }
+    .container-deux .container-playlist img{
+        width: 15vh;
+    }
+}
 
 
 
