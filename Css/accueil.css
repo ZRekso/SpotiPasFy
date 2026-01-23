@@ -253,3 +253,32 @@ section:nth-child(3) {
 audio{
     border-radius: 20px;
 }
+
+
+@media (max-width: 800px) {
+    .container-playlist{
+        flex-wrap: wrap;
+    }
+    .container-un{
+        display: none;
+    }
+
+    #search{
+        width: 30vh;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #welcome{
+        font-size: 3vh;
+    }
+    .container-tendance div{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+}
+
+
+
+
