@@ -254,6 +254,17 @@ audio{
     border-radius: 20px;
 }
 
+/*=================*/
+/*      Widget     */
+/*=================*/
+
+#container-search-phone{
+    position: fixed;
+    /* opacity: 0; */ 
+    background-color: blue; /* finir */
+    z-index: 1;
+    
+}
 
 @media (max-width: 800px) {
     .container-playlist{
@@ -304,7 +315,12 @@ audio{
     .container-deux .container-playlist img{
         width: 15vh;
     }
+    .container-deux{
+        display: flex;
+        justify-content: center;
+    }
+    .container-playlist{
+        justify-content: center;
+    }
+    
 }
-
-
-
