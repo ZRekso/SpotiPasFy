@@ -258,11 +258,9 @@ audio{
 /*      Widget     */
 /*=================*/
 
-.Search-Phone{
-    background-color: red; /* REVOIR TEST */
-}
 
 #container-search-phone{
+    display: none;
     position: fixed;
     /* opacity: 0; */ 
     background-color: blue; /* finir */
@@ -278,8 +276,8 @@ audio{
         display: none;
     }
 
-    .Search-Phone{
-        display: absolute;
+    #container-search-phone{
+        display:initial;
     }
 
     #search{
