@@ -258,6 +258,10 @@ audio{
 /*      Widget     */
 /*=================*/
 
+.Search-Phone{
+    background-color: red; /* REVOIR TEST */
+}
+
 #container-search-phone{
     position: fixed;
     /* opacity: 0; */ 
@@ -272,6 +276,10 @@ audio{
     }
     .container-un{
         display: none;
+    }
+
+    .Search-Phone{
+        display: absolute;
     }
 
     #search{
