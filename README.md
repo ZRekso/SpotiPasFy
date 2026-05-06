@@ -28,4 +28,4 @@ SpotiPasFy est un projet d'entraînement JavaScript sur l'univers de la musique.
 
 ### 🚀 Aperçu du projet
 > [!TIP]
-> Vous pouvez tester la version en ligne ici : [Lien vers GitHub Pages](https://zrekso.github.io/SpotiPasFy/)
+> Vous pouvez tester la version en ligne ici : [SpotiPasFy](https://zrekso.github.io/SpotiPasFy/)
