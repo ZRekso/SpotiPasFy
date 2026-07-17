@@ -8,19 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="JavaScript/Script.js"></script>
+    <script src="JavaScript/Script.js" defer></script>
     <title>SpotiPasFy</title>
-    <link rel="stylesheet" href="Css/accueil.css">
 </head>
 <body>
     <header>
-        <img src="Image/logoFav.png" alt="Logo SpotiPasFy" width="100px">
+        <img id="logo" src="Image/logoFav.png" alt="Logo SpotiPasFy">
     </header>
     <section>
         <div>
             <h1>Inscrivez-vous pour commencer à écouter</h1>
             <form>
-                <label for="name">Non d'utilisateur</label>
                 <input id="name" type="text" placeholder="Votre nom d'utilisateur">
                 <input id="suivant" type="submit" value="Suivant" onclick="utilisateur(event)" required>
             </form>
