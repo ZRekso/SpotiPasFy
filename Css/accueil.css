@@ -33,5 +33,30 @@ header a{
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.container{
+    margin-left: 1.6%;
+    margin-right: 1.6%;
+    margin-top: 2%;
+    color: white;
+    background-color: #202020;
+    border-radius: 15px;
+    padding-top: 5%;
+    padding-left: 1.5%;
+}
+
+.container-tendance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tendance div{
+
+}
+
+.container-tendance img{
+    width: 60%;
 }
