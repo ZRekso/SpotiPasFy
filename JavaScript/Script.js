@@ -55,3 +55,25 @@ function PlayAlbum(lienAlbum) {
     audio.src = lienAlbum;
     audio.play();
 }
+
+// Menu connexion 
+/*let logo = document.getElementById("logo");
+
+let Spread = 0;
+let direction = 1;
+
+function pulse(){
+    Spread += direction * 0.6;
+    if(Spread >= 30){
+        direction = -1;  
+    }
+    if(Spread <= 0){
+        direction = 1;
+    }
+
+    logo.style.boxShadow = `0 0 ${Spread}px 13px #1ED760`;
+    requestAnimationFrame(pulse); // relance pulse au prochain chargement de la fenetre 
+}
+
+pulse(); */ 
+
