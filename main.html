@@ -14,27 +14,55 @@
 <body>
     <!-- NavBar / Header -->
     <header>
-        <a href="main.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></a>
+        <a href="main.html"><img class="logo" src="Image/home.png" alt="Home" width="20px"></a>
+        <nav>
+            <input type="search" id="search" placeholder="Que voulez vous écouter ?">
+            <button id="search-button"><img src="Image/search.png" alt="Loop recherche" width="20px" onclick="searchMusic()"></button>
+        </nav>
         <h1 id="welcome"></h1>
     </header>
 
+
+    <!-- Contenu  -->
     <section class="container">
-            <h1>Bonjour !</h1>
+        
+        <!-- Widget search téléphone (TODO UPDATE) -->
+    <!-- 
+    <section class="Search-Phone">
+        <div id="container-search-phone">
+            <button id="leave-search-phone">Quitter</button>
+        </div>
+    </section> 
+    -->
+
+        <div class="container-un">
+            <div class="header-Result">
+                <h2>Recherche</h2>
+                <button class="btn-add-playlist">+</button>
+            </div>
+            <hr>
+            <div id="container-Search">
+                <!-- JavaScript -->
+            </div>
+        </div>
+        <div class="container-deux">
             <div class="container-tendance">
                 <div onclick="PlayAlbum('https://prod-1.storage.jamendo.com/?trackid=1579436&format=mp31&from=EUdFTusI%2FBT4d172%2BGxGcw%3D%3D%7Co2Wol3x7SqXDQ9Kc8Elp4Q%3D%3D')">
-                    <img src="https://usercontent.jamendo.com/?type=album&id=380990&width=300&trackid=1579436" alt="Album photo">
+                    <img src="https://usercontent.jamendo.com/?type=album&id=380990&width=300&trackid=1579436" alt="Album photo" width="20%">
                     <p>Smooth Rnb Chill</p>
                 </div>
                 <div onclick="PlayAlbum('https://prod-1.storage.jamendo.com/?trackid=1597598&format=mp31&from=SvnPodsaZDTlWjPIB4FEzQ%3D%3D%7C5duHlHeNbvOAdGqZqzQCjQ%3D%3D')">
-                    <img src="https://usercontent.jamendo.com/?type=album&id=306646&width=300&trackid=1597598" alt="Album photo">
+                    <img src="https://usercontent.jamendo.com/?type=album&id=306646&width=300&trackid=1597598" alt="Album photo" width="20%">
                     <p>Island Girls</p>
                 </div>
+            </div>
+            <div class="container-tendance">
                 <div onclick="PlayAlbum('https://prod-1.storage.jamendo.com/?trackid=312689&format=mp31&from=ZWMQWncUfjJe6XLB4mpDFQ%3D%3D%7CKQ7WtilcPluXMdGPQPqnhg%3D%3D')">
-                    <img src="https://usercontent.jamendo.com/?type=album&id=42332&width=300&trackid=312689" alt="Album photo" >
+                    <img src="https://usercontent.jamendo.com/?type=album&id=42332&width=300&trackid=312689" alt="Album photo" width="20%">
                     <p>BlackRain</p>
                 </div>
                 <div onclick="PlayAlbum('https://prod-1.storage.jamendo.com/?trackid=1383874&format=mp31&from=zOcrAoz%2FSKFrU3YzqS52Vg%3D%3D%7CYPKs5TUGBWmBCeEJFX8HYg%3D%3D')">
-                    <img src="https://usercontent.jamendo.com/?type=album&id=162388&width=300&trackid=1383874" alt="Album photo" >
+                    <img src="https://usercontent.jamendo.com/?type=album&id=162388&width=300&trackid=1383874" alt="Album photo" width="20%">
                     <p>Kangaroo</p>
                 </div>
             </div>
@@ -94,5 +122,13 @@
                     <p>Morphiction</p>
                 </div>
             </div>
+        </div>
     </section>
-
+    
+    <!-- Bar musique -->
+    <section>
+        <audio id="audio" controls></audio>
+    </section>
+    
+</body>
+</html>
