@@ -1,0 +1,126 @@
+body{
+    margin-top: 5%;
+    background: radial-gradient(
+        circle at 50% 1%,
+        #1a4d3a 0%,
+        #0d2818 30%,
+        #0a0a0a 70%
+    );
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header img{
+    border-radius: 50%;
+    width: 16%;
+}
+
+
+@keyframes pulse-logo {
+    0%, 100% {
+        filter: 
+            drop-shadow(0 0 0px rgba(239, 68, 68, 0.7))
+            drop-shadow(0 0 0px rgba(239, 68, 68, 0.4));
+    }
+    50% {
+        filter: 
+            drop-shadow(0 0 10px rgba(239, 68, 68, 0.8))
+            drop-shadow(0 0 22px rgba(239, 68, 68, 0.35));
+    }
+}
+
+h1::after{
+    display: block;
+    position: relative;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -1.6rem;
+    left: -1.6rem;
+    background: radial-gradient(circle at 35% 35%, #ff6b6b, #ef4444 60%, #c43333 100%);
+    animation: pulse-logo 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    color: white;
+    width: 388px;
+    height: 698px;          
+}
+
+
+button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 324px;
+    height: 48px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #7c7c7c;
+    color: white;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 324px;
+    height: 48px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #7c7c7c;
+    color: white;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    border-color: white;
+}
+
+@media (max-width: 767px) {
+    header{
+        margin-top: 18%;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    div{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    header img{
+        border-radius: 50%;
+        width: 28%;
+    }
+}

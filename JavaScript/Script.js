@@ -8,7 +8,7 @@ function utilisateur(event){
     }
     else {
         localStorage.setItem("spotypasfyUser", input);
-        window.location.href = "main.html";
+        window.location.href = "Construction.html";
     }
 }
 
