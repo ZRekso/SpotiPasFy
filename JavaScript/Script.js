@@ -77,3 +77,41 @@ function pulse(){
 
 pulse(); */ 
 
+
+
+function demarrerCompteur() {
+    let dateFin = localStorage.getItem("finCompteur");
+
+    if (!dateFin) {
+        dateFin = Date.now() + 3 * 24 * 60 * 60 * 1000; // 3 jours en millisecondes
+        localStorage.setItem("finCompteur", dateFin);
+    } else {
+        dateFin = Number(dateFin);
+    }
+
+    const compteurElement = document.getElementById("compteur");
+    if (!compteurElement) return;
+
+    function majCompteur() {
+        const maintenant = Date.now();
+        const diff = dateFin - maintenant;
+
+        if (diff <= 0) {
+            compteurElement.textContent = "0j 0h 0m 0s";
+            clearInterval(intervalle);
+            return;
+        }
+
+        const jours = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const heures = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const secondes = Math.floor((diff / 1000) % 60);
+
+        compteurElement.textContent = `${jours}j ${heures}h ${minutes}m ${secondes}s`;
+    }
+
+    majCompteur();
+    const intervalle = setInterval(majCompteur, 1000);
+}
+
+window.addEventListener("load", demarrerCompteur);
