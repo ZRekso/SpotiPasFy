@@ -46,28 +46,6 @@
   height: 698px;
 }
 
-.signup-page p::after {
-  content: "";
-  width: 600%;
-  height: 2px;
-  background-color: #7c7c7c;
-  display: block;
-  position: relative;
-  top: -0.6rem;
-  right: -2rem;
-}
-
-.signup-page p::before {
-  content: "";
-  width: 600%;
-  height: 2px;
-  background-color: #7c7c7c;
-  display: block;
-  position: relative;
-  top: 0.8rem;
-  right: 8.5rem;
-}
-
 .signup-page button {
   display: flex;
   justify-content: space-around;
@@ -158,6 +136,31 @@
   width: 100%;
 }
 
+@media (min-width: 767px) { 
+  .signup-page p::after {
+    content: "";
+    width: 555%;
+    height: 2px;
+    background-color: #7c7c7c;
+    display: block;
+    position: relative;
+    top: -0.71rem;
+    right: -2rem;
+  }
+
+  .signup-page p::before {
+    content: "";
+    width: 572%;
+    height: 2px;
+    background-color: #7c7c7c;
+    display: block;
+    position: relative;
+    top: 0.9rem;
+    right: 9.4rem;
+  }
+}
+
+
 @media (max-width: 767px) {
   .signup-page header {
     margin-top: 10%;
@@ -174,5 +177,27 @@
     border-radius: 50%;
     width: 28%;
     animation: pulse-logo 3s ease-in-out infinite;
+  }
+
+  .signup-page p::after {
+    content: "";
+    width: 600%;
+    height: 2px;
+    background-color: #7c7c7c;
+    display: block;
+    position: relative;
+    top: -0.6rem;
+    right: -2rem;
+  }
+
+  .signup-page p::before {
+    content: "";
+    width: 600%;
+    height: 2px;
+    background-color: #7c7c7c;
+    display: block;
+    position: relative;
+    top: 0.8rem;
+    right: 8.5rem;
   }
 }
