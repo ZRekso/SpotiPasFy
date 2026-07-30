@@ -215,10 +215,15 @@ body{
         overflow-y: scroll;
     }
 
-    .HomePage .container-section{
+    .HomePage .container-section {
         padding: 0.5rem;
         overflow-y: scroll;
-        height: 83vh;
+        height: 83dvh; /* dvh au lieu de vh */
+        padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+    }
+    
+    nav {
+        padding-bottom: env(safe-area-inset-bottom);
     }
 
     .HomePage .container-section h2:nth-child(1){
