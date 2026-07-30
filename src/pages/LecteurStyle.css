@@ -1,0 +1,161 @@
+body {
+    color: white;
+    font-family: "Montserrat", sans-serif; 
+}
+
+
+
+/* Laptop */
+@media (min-width: 769px) {
+    .Lecteur{
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .Lecteur .background-blur {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        background-size: cover;
+        background-position: center;
+        filter: blur(25px) brightness(0.6);
+        z-index: -2;
+    }
+
+    .Lecteur header{
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .Lecteur header > button{
+        color: #2fd978;
+        font-weight: bold;
+        border-radius: 5px;
+        padding-top : 1rem;
+        padding-bottom : 1rem;
+        padding-left : 1.5rem;
+        padding-right : 1.5rem;
+        font-size: 0.9rem;
+        border: solid #2fd978 2px;
+        background-color: #ffffff00;
+    }
+
+    .Lecteur header > button:hover{
+        background-color: #2fd978;color: white;
+    }
+
+    .Lecteur div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Lecteur div:nth-child(3) img{
+        border-radius: 7px;
+        margin-bottom: 3rem;
+        margin-top: 1.5rem;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .Lecteur div:nth-child(3) h1{
+        font-size: 1.9rem;
+    }
+    /* Bar Audio */
+
+    .Lecteur .barre-progression{
+        accent-color: #2fd978;
+        width: 17rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .Lecteur .btn-play{
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #ffff;
+        color: black;
+        border: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .Lecteur{
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .Lecteur .background-blur {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        background-size: cover;
+        background-position: center;
+        filter: blur(25px) brightness(0.6);
+        z-index: -2;
+    }
+
+    .Lecteur header{
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .Lecteur header > button{
+        color: #2fd978;
+        font-weight: bold;
+        border-radius: 5px;
+        padding-top : 0.3rem;
+        padding-bottom : 0.4rem;
+        padding-left : 0.5rem;
+        padding-right : 0.5rem;
+        font-size: 0.9rem;
+        border: solid #2fd978 2px;
+        background-color: #ffffff00;
+    }
+
+    .Lecteur header > button:hover{
+        background-color: #2fd978;color: white;
+    }
+
+    .Lecteur div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Lecteur div:nth-child(3) img{
+        border-radius: 7px;
+        margin-bottom: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    .Lecteur div:nth-child(3) h1{
+        font-size: 1.5rem;
+    }
+    /* Bar Audio */
+
+    .Lecteur .barre-progression{
+        accent-color: #2fd978;
+        width: 17rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .Lecteur .btn-play{
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #ffff;
+        color: black;
+        border: none;
+    }
+}

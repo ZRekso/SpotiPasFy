@@ -1,0 +1,225 @@
+/* Laptop */
+@media (min-width: 769px) {
+    .Recherche {
+        padding-top: 1.2rem;
+        background-color: black;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 7rem;
+        padding-bottom: 0;
+        padding-right: 2rem;
+    }
+
+    .Recherche header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .Recherche header > div{
+        display: flex;
+        gap: 20px;
+    }
+
+    .Recherche section{
+        margin-top: 2rem;
+        border-radius: 8px;
+        height: 88vh;
+        overflow: scroll;
+    }
+
+    nav {
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        right: auto;
+        width: 5.5rem;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    nav div {
+        cursor: pointer;
+    }
+
+    .Recherche nav div:nth-child(2) {
+        position: relative;
+    }
+
+    .Recherche nav div:nth-child(2)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 3.8rem;
+        top: -0rem;
+        width: 0.2rem;
+        height: 2.5rem;
+        background-color: #2fd978;
+    }
+
+    /* SEARCH */
+
+    .barre-recherche {
+        position: relative;
+        width: 100%;
+    }
+
+    .barre-recherche input {
+        width: 100%;
+        padding: 0.8rem 2.8rem 0.8rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #3a3a3a;
+        background-color: #202020;
+        color: white;
+    }
+
+    .barre-recherche svg {
+        position: absolute;
+        right: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    #container-Search{
+        margin-top: 1rem;
+        padding: 0.5rem;
+        overflow-y: scroll;
+        height: 83vh;
+    }
+
+    .container-result-search{
+        background-color: #202020;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0.8rem;
+    }
+
+    .container-result-search > img{
+        width: 9rem;
+        height: 9rem;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .Recherche{
+        margin-left: 0.6rem;
+        margin-top: 0.3rem;
+        margin-right: 0.6rem;
+    }
+
+    .Recherche header{
+        padding-bottom: 0.7rem;
+    }
+
+    .Recherche > section{
+        border-radius: 7px;
+    }
+
+    section h2{
+        margin-left: 0.4rem;
+        padding-top: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+
+    /* SEARCH */
+
+    .barre-recherche {
+        position: relative;
+        width: 100%;
+    }
+
+    .barre-recherche input {
+        width: 100%;
+        padding: 0.8rem 2.8rem 0.8rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #3a3a3a;
+        background-color: #202020;
+        color: white;
+    }
+
+    .barre-recherche svg {
+        position: absolute;
+        right: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    #container-Search{
+        margin-top: 1rem;
+        padding: 0.5rem;
+        overflow-y: scroll;
+        height: 73.8vh;
+    }
+
+    .container-result-search{
+        background-color: #202020;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0.8rem;
+    }
+
+    .container-result-search > img{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+
+
+    /* NavBar */
+    .Recherche nav div:nth-child(2)::after{
+        content: "";
+        display: block; 
+        width: auto;
+        height: 2px;
+        background-color: #2fd978;
+        position: relative;
+        right: auto;
+    }
+
+    section > div > p{
+        margin-left: 0.4rem;
+    }
+
+    .Recherche section:nth-child(2),
+    .Recherche section:nth-child(3){
+        margin-bottom: 1.3rem;
+    }
+
+    .Recherche section:nth-child(3) > div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Recherche section:nth-child(3){
+        padding-bottom: 1.2rem;
+    }
+}
+    #container-Search{
+        scrollbar-width: none;
+    }
+
+    .Recherche #container-Search::-webkit-scrollbar{
+        display: none; /* cache la barre de scroll sur Chrome/Safari */
+    }

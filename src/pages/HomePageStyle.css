@@ -1,0 +1,350 @@
+body{
+    background-color: black;
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .HomePage {
+        padding-top: 1.2rem;
+        background-color: black;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 7rem;
+        padding-bottom: 0;
+        padding-right: 2rem;
+    }
+
+    .HomePage header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .HomePage header > div{
+        display: flex;
+        gap: 20px;
+    }
+
+    .HomePage section{
+        margin-top: 2rem;
+        background-color: #202020;
+        border-radius: 8px;
+        height: 88vh;
+        overflow: scroll;
+    }
+
+    nav {
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        right: auto;
+        width: 5.5rem;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    nav div {
+        cursor: pointer;
+    }
+    
+
+    /* Tendance */
+    /* Revoir pour responsive pc */
+    .HomePage section {
+        margin-top: 0.5rem;
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+        background-color: #202020;
+        border-radius: 10px;
+        overflow-y: scroll;
+    }
+
+    .HomePage .container-section{
+        padding: 0.5rem;
+        overflow-y: scroll;
+        height: 83vh;
+    }
+
+    .HomePage .container-section h2:nth-child(1){
+        font-size: 1.45rem;
+        padding-bottom: 1.4rem;
+        padding-top: 0.5rem;
+    }
+
+    .HomePage .container-section .tendance{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;/* Se positionne correctement */
+    }
+
+    .HomePage .container-section .tendance > div:hover { /* enfant direct de tendance */
+        background-color: #484848;
+    }
+
+    .HomePage .container-section .tendance > div {
+        width: 12.5rem; 
+        background-color: #2c2c2e;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .HomePage .container-section .tendance > div img {
+        width: 4.2rem;
+        height: 4.2rem;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0; /* protege retrecissement force par flexbox */
+    }
+
+    /* POP | RAP */
+
+    .HomePage .container-section .container-pop h2,
+    .HomePage .container-section .container-rap h2,
+    .HomePage .container-section .container-rb h2{
+        padding-top: 1.7rem;
+        padding-bottom: 1rem;
+    }
+
+    .HomePage .container-section .container-pop > div,
+    .HomePage .container-section .container-rap > div,
+    .HomePage .container-section .container-rb > div{
+        display: flex;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+
+    .HomePage .container-section .container-pop img,
+    .HomePage .container-section .container-rap img,
+    .HomePage .container-section .container-rb img{
+        width: 8.2rem;
+        height: 8..2rem;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .HomePage .container-section .container-pop > div > div > p:nth-child(2),
+    .HomePage .container-section .container-rap > div > div > p:nth-child(2),
+    .HomePage .container-section .container-rb > div > div > p:nth-child(2){
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .HomePage .container-section .container-pop > div > div > p:nth-child(3),
+    .HomePage .container-section .container-rap > div > div > p:nth-child(3),
+    .HomePage .container-section .container-rb > div > div > p:nth-child(3){
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    .HomePage nav div:nth-child(1) {
+        position: relative;
+    }
+
+    .HomePage nav div:nth-child(1)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 3.8rem;
+        top: -0rem;
+        width: 0.2rem;
+        height: 2.5rem;
+        background-color: #2fd978;
+    }
+}
+
+
+
+/*  Mobile */
+@media (max-width: 768px) {
+    .HomePage {
+        background-color: black;
+        color: white;
+        padding-bottom: 1.5rem;
+        font-family: "Montserrat", sans-serif; 
+    }
+
+    .HomePage header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .HomePage header div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0.6rem;
+        margin-top: 0.3rem;
+    }
+
+    .HomePage #welcome{
+        font-size: 1.8rem;
+    }
+
+    .HomePage .loupeSVG{
+        margin-right: 0.6rem;
+        margin-top: 0.3rem;
+        background-color: #141414;
+        border-radius: 50%;
+        padding: 0.4rem;
+    } 
+
+    /* Tendance */
+    /* Revoir pour responsive pc */
+    .HomePage section {
+        margin-top: 0.5rem;
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+        background-color: #202020;
+        border-radius: 10px;
+        overflow-y: scroll;
+    }
+
+    .HomePage .container-section{
+        padding: 0.5rem;
+        overflow-y: scroll;
+        height: 83vh;
+    }
+
+    .HomePage .container-section h2:nth-child(1){
+        font-size: 1.45rem;
+        padding-bottom: 1.4rem;
+        padding-top: 0.5rem;
+    }
+
+    .HomePage .container-section .tendance{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;/* Se positionne correctement */
+    }
+
+    .HomePage .container-section .tendance > div:hover { /* enfant direct de tendance */
+        background-color: #484848;
+    }
+
+    .HomePage .container-section .tendance > div {
+        width: 10rem; 
+        background-color: #2c2c2e;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .HomePage .container-section .tendance > div img {
+        width: 3.5rem;
+        height: 3.5rem;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0; /* protege retrecissement force par flexbox */
+    }
+
+    /* POP | RAP */
+
+    .HomePage .container-section .container-pop h2,
+    .HomePage .container-section .container-rb h2  {
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+
+    .HomePage .container-section .container-pop > div,
+    .HomePage .container-section .container-rap > div,
+    .HomePage .container-section .container-rb > div{
+        display: flex;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+
+    .HomePage .container-section .container-pop img,
+    .HomePage .container-section .container-rap img,
+    .HomePage .container-section .container-rb img{
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .HomePage .container-section .container-pop > div > div > p:nth-child(2),
+    .HomePage .container-section .container-rap > div > div > p:nth-child(2),
+    .HomePage .container-section .container-rb > div > div > p:nth-child(2){
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .HomePage .container-section .container-pop > div > div > p:nth-child(3),
+    .HomePage .container-section .container-rap > div > div > p:nth-child(3),
+    .HomePage .container-section .container-rb > div > div > p:nth-child(3){
+        font-size: 0.8rem;
+    }
+
+    /* Menu | Nav */
+
+    nav{
+        background-color: #363535fc; /* TODO #141414 */
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 100px;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        margin-left: 2%;
+        justify-content: space-around;
+    }
+
+
+
+    .HomePage nav div:nth-child(1)::after{
+        content: "";
+        display: block; 
+        width: auto;
+        height: 2px;
+        background-color: #2fd978;
+        position: relative;
+        right: auto;
+    }
+
+    nav div{
+        cursor: pointer;
+    }
+
+    /* Claude Amelioration */
+    .HomePage .container-pop > div,
+    .HomePage .container-rap > div,
+    .HomePage .container-rb > div {
+        display: flex;
+        gap: 30px;
+        overflow-x: scroll;
+        padding-right: 1.5rem;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /* cache la barre de scroll sur Firefox */
+    }
+
+    .HomePage .container-pop > div::-webkit-scrollbar,
+    .HomePage .container-rap > div::-webkit-scrollbar,
+    .HomePage .container-rb > div::-webkit-scrollbar {
+        display: none; /* cache la barre de scroll sur Chrome/Safari */
+    }
+
+    .HomePage .container-pop > div > div,
+    .HomePage .container-rap > div > div,
+    .HomePage .container-rb > div > div {
+        scroll-snap-align: start;
+    }
+}

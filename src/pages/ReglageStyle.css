@@ -1,0 +1,362 @@
+.mentions-legales > div{
+    margin-left: 0.5rem;
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .Reglage{
+        padding-top: 1.2rem;
+        background-color: black;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 7rem;
+        padding-bottom: 0;
+        padding-right: 2rem;
+    }
+
+    .Reglage header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.2rem;
+    }
+
+    nav {
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        right: auto;
+        width: 5.5rem;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    nav div {
+        cursor: pointer;
+    }
+
+    .Reglage nav div:nth-child(3) {
+        position: relative;
+    }
+
+    .Reglage nav div:nth-child(3)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 3.8rem;
+        top: -0rem;
+        width: 0.2rem;
+        height: 2.5rem;
+        background-color: #2fd978;
+    }
+
+    .Reglage > section{
+        background-color: #202020;
+        border-radius: 7px;
+    }
+
+    section h2{
+        margin-left: 0.4rem;
+        padding-top: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .container-blanc div:nth-child(2),
+    .container-black div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    }
+
+    /* Affichage Mode sombre / Clair  */
+    .Reglage > section:nth-child(2) > div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Reglage > section > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .Blanc{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-top: 3.7rem;
+        padding-bottom: 3.7rem;
+    }
+
+    .container-blanc div:nth-child(2),
+    .container-black div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+
+    .Blanc span:nth-child(1){
+        content: "";
+        display: block; 
+        width: 4.5rem;
+        border-radius: 50%;
+        height: 4.5rem;
+        position: relative;
+        border: solid 1px black;
+    }
+
+    .Noir span:nth-child(1){
+        content: "";
+        display: block; 
+        width: 4.5rem;
+        border-radius: 50%;
+        height: 4.5rem;
+        position: relative;
+        border: solid 1px #2fd978;
+    }
+
+    .Noir {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-top: 3.7rem;
+        padding-bottom: 3.7rem;
+    }
+
+    .Reglage > section:nth-child(4){
+        overflow-y: scroll;
+        height: 26.6vh;
+    }
+
+    section > div > p{
+        margin-left: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    .Reglage .mentions-legales div {
+        padding-top: 0.5rem;
+    }
+
+    .Reglage .mentions-legales p {
+        color: #a1a1aa;
+        line-height: 1.6;
+        margin: 0 0 0.4rem 0;
+    }
+
+    .Reglage .mentions-legales a {
+        color: #2fd978;
+        text-decoration: none;
+    }
+
+    .Reglage .mentions-legales a:hover {
+        text-decoration: underline;
+    }
+
+    .Reglage .mentions-legales .dev-notice {
+        margin-top: 1rem;
+        color: #f59e0b;
+        font-style: italic;
+        font-size: 0.85rem;
+    }
+    /* Profil */
+
+    .Reglage section:nth-child(2),
+    .Reglage section:nth-child(3){
+        margin-bottom: 1.3rem;
+    }
+
+    .Reglage section:nth-child(3) > div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Reglage section:nth-child(3){
+        padding-bottom: 1.2rem;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .Reglage{
+        margin-left: 0.6rem;
+        margin-top: 0.3rem;
+        margin-right: 0.6rem;
+    }
+
+    .Reglage header{
+        padding-bottom: 0.7rem;
+    }
+
+    .Reglage > section{
+        background-color: #202020;
+        border-radius: 7px;
+    }
+
+    section h2{
+        margin-left: 0.4rem;
+        padding-top: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .container-blanc div:nth-child(2),
+    .container-black div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    }
+
+    /* Affichage Mode sombre / Clair  */
+    .Reglage > section:nth-child(2) > div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Reglage > section > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .Blanc{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .container-blanc div:nth-child(2),
+    .container-black div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+
+    .Blanc span:nth-child(1){
+        content: "";
+        display: block; 
+        width: 4.5rem;
+        border-radius: 50%;
+        height: 4.5rem;
+        position: relative;
+        border: solid 1px black;
+    }
+
+    .Noir span:nth-child(1){
+        content: "";
+        display: block; 
+        width: 4.5rem;
+        border-radius: 50%;
+        height: 4.5rem;
+        position: relative;
+        border: solid 1px #2fd978;
+    }
+
+    .Noir {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .Reglage > section:nth-child(4){
+        overflow-y: scroll;
+        height: 26.6vh;
+    }
+
+    /* NavBar */
+    .Reglage nav div:nth-child(3)::after{
+        content: "";
+        display: block; 
+        width: auto;
+        height: 2px;
+        background-color: #2fd978;
+        position: relative;
+        right: auto;
+    }
+
+    section > div > p{
+        margin-left: 0.4rem;
+    }
+
+    /* Profil */
+
+    .Reglage section:nth-child(2),
+    .Reglage section:nth-child(3){
+        margin-bottom: 1.3rem;
+    }
+
+    .Reglage section:nth-child(3) > div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Reglage section:nth-child(3){
+        padding-bottom: 1.2rem;
+    }
+
+    .Reglage .mentions-legales div {
+        padding-top: 0.5rem;
+    }
+
+    .Reglage .mentions-legales p {
+        color: #a1a1aa;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0 0 0.4rem 0;
+    }
+
+    .Reglage .mentions-legales a {
+        color: #2fd978;
+        text-decoration: none;
+    }
+
+    .Reglage .mentions-legales a:hover {
+        text-decoration: underline;
+    }
+
+    .Reglage .mentions-legales .dev-notice {
+    margin-top: 1rem;
+    color: #f59e0b;
+    font-style: italic;
+    font-size: 0.85rem;
+    }
+}
