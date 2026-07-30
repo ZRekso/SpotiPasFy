@@ -164,6 +164,10 @@ body{
         height: 2.5rem;
         background-color: #2fd978;
     }
+    
+    .loupeSVG{
+        cursor: pointer;
+    }
 }
 
 
@@ -213,6 +217,8 @@ body{
         border-radius: 10px;
         overflow-y: scroll;
     }
+
+
 
     .HomePage .container-section {
         padding: 0.5rem;

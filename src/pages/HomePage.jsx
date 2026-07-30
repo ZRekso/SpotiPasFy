@@ -280,12 +280,11 @@ function HomePage() {
                     </svg>
                     <h1 id="welcome">{username}</h1>
                 </div>
-                <svg className="loupeSVG" width="40" height="40" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+                <svg onClick={recherche} className="loupeSVG" width="40" height="40" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="100" cy="100" r="60" fill="none" stroke="#a3a3a3" strokeWidth="16" />
                     <line x1="144" y1="144" x2="200" y2="200" stroke="#a3a3a3" strokeWidth="16" strokeLinecap="round" />
-                </svg>
+                </svg> 
             </header>
-
             <section>
                 <div className="container-section">
                     <h2>Bonjour !</h2>
