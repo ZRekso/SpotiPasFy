@@ -1,18 +1,21 @@
 <h1 align="center">SpotiPasFy</h1>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Status-En%20Développement-orange" alt="Status">
 </p>
 
 **Description :**  
-SpotiPasFy est un projet d'entraînement JavaScript sur l'univers de la musique.
+SpotiPasFy est une application web développée en React permettant de rechercher et d'écouter des pistes audio libres de droit via l'API Jamendo. L'application est compatible aussi bien avec les écrans mobiles qu'avec les écrans d'ordinateur.
 
 **Fonctionnalités :**
 * Lecture de musique libre de droit.
 * Interface utilisateur inspirée des plateformes de streaming.
-* Barre de recherche fonctionnelle pour trouver des titres.
+* Barre de recherche fonctionnelle pour trouver des titres via l'API Jamendo.
+* Navigation multi-pages (accueil, recherche, lecteur, paramètres).
+* Interface responsive, adaptée aux écrans mobiles et desktop.
 
 **Outils utilisés :**
+* ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+* ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 * ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
@@ -28,4 +31,4 @@ SpotiPasFy est un projet d'entraînement JavaScript sur l'univers de la musique.
 
 ### 🚀 Aperçu du projet
 > [!TIP]
-> Vous pouvez tester la version en ligne ici : [SpotiPasFy](https://zrekso.github.io/SpotiPasFy/)
+> Vous pouvez tester la version en ligne ici : [SpotiPasFy](https://spotipasfy.vercel.app/)
