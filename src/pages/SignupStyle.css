@@ -192,7 +192,7 @@
 
   .signup-page p::before {
     content: "";
-    width: 600%;
+    width: 650%;
     height: 2px;
     background-color: #7c7c7c;
     display: block;
