@@ -218,7 +218,7 @@ body{
     .HomePage .container-section{
         padding: 0.5rem;
         overflow-y: scroll;
-        height: 70vh;
+        height: 80vh;
     }
 
     .HomePage .container-section h2:nth-child(1){
