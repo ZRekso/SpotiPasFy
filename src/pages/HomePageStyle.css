@@ -205,7 +205,6 @@ body{
     } 
 
     /* Tendance */
-    /* Revoir pour responsive pc */
     .HomePage section {
         margin-top: 0.5rem;
         margin-left: 0.6rem;
@@ -218,7 +217,7 @@ body{
     .HomePage .container-section {
         padding: 0.5rem;
         overflow-y: scroll;
-        height: 83dvh; /* dvh au lieu de vh */
+        height: 83dvh; /* dvh au lieu de vh meilleur adaptation sur mobile (iphone) */
         padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
     }
     
@@ -238,7 +237,7 @@ body{
         flex-wrap: wrap;/* Se positionne correctement */
     }
 
-    .HomePage .container-section .tendance > div:hover { /* enfant direct de tendance */
+    .HomePage .container-section .tendance > div:hover {
         background-color: #484848;
     }
 
