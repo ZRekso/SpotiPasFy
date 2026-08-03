@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SignupStyle.css";
 import logo from "../assets/logoFav.png";
+import logoGoogle from "../assets/Google"
 
 function SignupPage() {
     const [nom, setNom] = useState("");
@@ -37,7 +38,7 @@ function SignupPage() {
                     </form>
                     <p>ou</p>
                     <button className="login-button">
-                        Inscrivez-vous avec Google {/* todo : revoir les btn*/}
+                        <img src="" alt="Logo Google" />Inscrivez-vous avec Google {/* todo : revoir les btn*/}
                     </button>
                     <button className="login-button">
                         Inscrivez-vous avec Apple
