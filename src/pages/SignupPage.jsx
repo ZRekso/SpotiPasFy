@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./SignupStyle.css";
 import logo from "../assets/logoFav.png";
 import logoGoogle from "../assets/google.png";
+import logoIphone from "../assets/apple-logo.png";
+
 
 function SignupPage() {
     const [nom, setNom] = useState("");
@@ -41,7 +43,7 @@ function SignupPage() {
                         <img src={logoGoogle} alt="Logo Google" width="8%"/>Inscrivez-vous avec Google {/* todo : revoir les btn*/}
                     </button>
                     <button className="login-button">
-                        Inscrivez-vous avec Apple
+                        <img src={logoIphone} alt="Logo Google" width="8%"/>Inscrivez-vous avec Apple
                     </button>
                 </div>
             </section>
