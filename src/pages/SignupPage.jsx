@@ -4,7 +4,8 @@ import "./SignupStyle.css";
 import logo from "../assets/logoFav.png";
 import logoGoogle from "../assets/google.png";
 import logoIphone from "../assets/apple-logo.png";
-
+import { auth } from "../firebase";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 function SignupPage() {
     const [nom, setNom] = useState("");
@@ -18,6 +19,19 @@ function SignupPage() {
             localStorage.setItem("spotypasfyUser", nom);
             navigate("/home");
         }
+    }
+
+    function connexionGoogle() {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                const user = result.user;
+                localStorage.setItem("spotypasfyUser", user.displayName);
+                navigate("/home");
+            })
+            .catch((error) => {
+                console.error("Erreur de connexion Google :", error);
+            });
     }
 
     return (
@@ -36,11 +50,11 @@ function SignupPage() {
                             value={nom}
                             onChange={(event) => setNom(event.target.value)}
                         />
-                    <input id="suivant" type="submit" value="Suivant" />
+                        <input id="suivant" type="submit" value="Suivant" />
                     </form>
                     <p>ou</p>
-                    <button className="login-button">
-                        <img src={logoGoogle} alt="Logo Google" width="8%"/>Inscrivez-vous avec Google {/* todo : revoir les btn*/}
+                    <button className="login-button" onClick={connexionGoogle}>
+                        <img src={logoGoogle} alt="Logo Google" width="8%"/>Inscrivez-vous avec Google
                     </button>
                     <button className="login-button">
                         <img src={logoIphone} alt="Logo Google" width="8%"/>Inscrivez-vous avec Apple
@@ -49,6 +63,6 @@ function SignupPage() {
             </section>
         </div>
     );
-}   
+}
 
 export default SignupPage;

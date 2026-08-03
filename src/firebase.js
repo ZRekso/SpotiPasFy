@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBN_iUoWqg55Xt_Sir-f9cCIR0tW1pSMuw",
-    authDomain: "spotipasfy.firebaseapp.com",
-    projectId: "spotipasfy",
-    storageBucket: "spotipasfy.firebasestorage.app",
-    messagingSenderId: "1059961554912",
-    appId: "1:1059961554912:web:5d7901f1dbbd70fc168d85",
-    measurementId: "G-YRC2ZYDJJ3"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
