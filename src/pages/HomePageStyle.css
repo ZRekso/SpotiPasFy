@@ -180,6 +180,15 @@ body{
     .HomePage .container-rb > div::-webkit-scrollbar {
         display: none;
     }
+    .HomePage section,
+    .HomePage .container-section {
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .HomePage section::-webkit-scrollbar,
+    .HomePage .container-section::-webkit-scrollbar {
+        display: none; /* Chrome / Edge / Safari */
+    }
 }
 
 
