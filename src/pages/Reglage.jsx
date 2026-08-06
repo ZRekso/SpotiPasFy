@@ -26,6 +26,15 @@ function ReglagePage() {
         navigate("/Reglage")
     }
 
+    {/* Theme Application */}
+    function ModeSombre(){
+
+    }
+
+    function ModeClair(){
+        
+    }
+
     return (
         <div className="Reglage">
             <header>
@@ -34,7 +43,7 @@ function ReglagePage() {
             <section>
                 <h2>Affichage</h2>
                 <div>
-                    <div className="container-blanc">
+                    <div onClick={ModeSombre} className="container-blanc">
                         <div className="Blanc">
                             <span></span>
                         </div>
@@ -42,7 +51,7 @@ function ReglagePage() {
                             <p>Mode Clair</p>
                         </div>
                     </div>
-                    <div className="container-black">
+                    <div onClick={ModeClair} className="container-black">
                         <div className="Noir">
                             <span></span>
                         </div>
