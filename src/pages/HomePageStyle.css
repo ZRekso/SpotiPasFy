@@ -168,6 +168,18 @@ body{
     .loupeSVG{
         cursor: pointer;
     }
+
+    .HomePage .container-pop > div,
+    .HomePage .container-rap > div,
+    .HomePage .container-rb > div {
+        scrollbar-width: none; 
+    }
+    
+    .HomePage .container-pop > div::-webkit-scrollbar,
+    .HomePage .container-rap > div::-webkit-scrollbar,
+    .HomePage .container-rb > div::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 
