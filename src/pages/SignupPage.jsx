@@ -34,6 +34,10 @@ function SignupPage() {
             });
     }
 
+    function connexionMailPasseword(){
+        //const provider = new 
+    }
+
     return (
         <div className="signup-page">
             <header>
