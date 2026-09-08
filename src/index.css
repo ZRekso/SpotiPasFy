@@ -4,18 +4,28 @@
   box-sizing: border-box;
 }
 
+:root{
+  --bg-color: black;
+  --texte-color: #ffffff;
+  --bg-popu-color: #141414;
+  --bg-nav-color: #363535fc;
+  --bg-HomePage-tendance: #2c2c2e;
+  --bg-HomePage-tendance-hover: #484848;
+}
 
-/*
-:root {
+:root[data-theme="clair"] {
   --bg-color: #ffffff;
-  --text-color: #242424;
+  --texte-color: black;
+  --bg-popu-color: #e4e2e2e3;
+  --bg-nav-color: #e4e2e2e3;
+  --bg-HomePage-tendance: #c5c3c3e3;
+  --bg-HomePage-tendance-hover: #a19e9ee3;
 }
 :root[data-theme="dark"] {
-  --bg-color: #242424;
-  --text-color: #ffffff;
+  --bg-color: black;
+  --texte-color: #ffffff;
+  --bg-popu-color: #141414;
+  --bg-nav-color: #363535fc;
+  --bg-HomePage-tendance: #2c2c2e;
+  --bg-HomePage-tendance-hover: #484848;
 }
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-*/

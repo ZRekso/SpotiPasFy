@@ -1,9 +1,13 @@
+h1{
+    color: var(--texte-color);
+}
+
 /* Laptop */
 @media (min-width: 769px) {
     .Recherche {
         padding-top: 1.2rem;
-        background-color: black;
-        color: white;
+        background-color: var(--bg-color);
+        color: var(--texte-color);
         font-family: "Montserrat", sans-serif;
         padding-left: 7rem;
         padding-bottom: 0;
@@ -80,8 +84,8 @@
         padding: 0.8rem 2.8rem 0.8rem 1rem;
         border-radius: 20px;
         border: 1px solid #3a3a3a;
-        background-color: #202020;
-        color: white;
+        background-color: var(--bg-popu-color);
+        color: var(--texte-color);
     }
 
     .barre-recherche svg {
@@ -100,11 +104,12 @@
     }
 
     .container-result-search{
-        background-color: #202020;
+        background-color: var(--bg-popu-color);
         border-radius: 8px;
         display: flex;
         align-items: center;
         gap: 10px;
+        color: var(--texte-color);
         margin-bottom: 0.8rem;
     }
 
@@ -152,8 +157,8 @@
         padding: 0.8rem 2.8rem 0.8rem 1rem;
         border-radius: 20px;
         border: 1px solid #3a3a3a;
-        background-color: #202020;
-        color: white;
+        background-color: var(--bg-popu-color);
+        color: var(--texte-color);
     }
 
     .barre-recherche svg {
@@ -172,11 +177,12 @@
     }
 
     .container-result-search{
-        background-color: #202020;
+        background-color: var(--bg-popu-color);
         border-radius: 8px;
         display: flex;
         align-items: center;
         gap: 10px;
+        color: var(--texte-color);
         margin-bottom: 0.8rem;
     }
 

@@ -28,11 +28,11 @@ function ReglagePage() {
 
     {/* Theme Application */}
     function modeSombre(){
-
+        document.documentElement.setAttribute("data-theme", "dark");
     }
 
     function modeClair(){
-        
+        document.documentElement.setAttribute("data-theme", "clair");
     }
 
     return (
@@ -43,7 +43,7 @@ function ReglagePage() {
             <section>
                 <h2>Affichage</h2>
                 <div>
-                    <div onClick={modeSombre} className="container-blanc">
+                    <div onClick={modeClair} className="container-blanc">
                         <div className="Blanc">
                             <span></span>
                         </div>
@@ -51,7 +51,7 @@ function ReglagePage() {
                             <p>Mode Clair</p>
                         </div>
                     </div>
-                    <div onClick={modeClair} className="container-black">
+                    <div onClick={modeSombre} className="container-black">
                         <div className="Noir">
                             <span></span>
                         </div>

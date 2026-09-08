@@ -1,13 +1,17 @@
 .mentions-legales > div{
     margin-left: 0.5rem;
 }
+/*
+.Reglage {
+    background-color: var(--bg-color);
+}* 
 
 /* Laptop */
 @media (min-width: 769px) {
     .Reglage{
         padding-top: 1.2rem;
-        background-color: black;
-        color: white;
+        background-color: var(--bg-color);
+        color: var(--texte-color);
         font-family: "Montserrat", sans-serif;
         padding-left: 7rem;
         padding-bottom: 0;
@@ -61,7 +65,7 @@
     }
 
     .Reglage > section{
-        background-color: #202020;
+        background-color: var(--bg-popu-color);
         border-radius: 7px;
     }
 
@@ -215,7 +219,8 @@
     }
 
     .Reglage > section{
-        background-color: #202020;
+        background-color: var(--bg-popu-color);
+        color: var(--texte-color);
         border-radius: 7px;
     }
 
