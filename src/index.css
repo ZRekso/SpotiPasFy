@@ -20,6 +20,7 @@
   --bg-nav-color: #e4e2e2e3;
   --bg-HomePage-tendance: #c5c3c3e3;
   --bg-HomePage-tendance-hover: #a19e9ee3;
+  --bg-nav-laptob: #e4e2e2e3;
 }
 :root[data-theme="dark"] {
   --bg-color: black;
@@ -28,4 +29,5 @@
   --bg-nav-color: #363535fc;
   --bg-HomePage-tendance: #2c2c2e;
   --bg-HomePage-tendance-hover: #484848;
+  --bg-nav-laptob: #141414;
 }
