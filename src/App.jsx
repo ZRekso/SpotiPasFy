@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import Lecteur from "./pages/Lecteur";
 import Reglage from "./pages/Reglage";
 import Recherche from "./pages/Recherche";
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <Route path="/Reglage" element={<Reglage />} />
         <Route path="/Recherche" element={<Recherche />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   );
 }

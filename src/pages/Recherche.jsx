@@ -20,6 +20,11 @@ function Recherche() {
             });
     }
 
+    {/* TODO Chargement search */}
+    function chargement(){
+        return <p>CHargement...</p>
+    }
+
 
     function ouvrirAlbum(album) {
         navigate("/Lecteur", { state: { album } });
@@ -46,8 +51,8 @@ function Recherche() {
             <section>
                 <div className="barre-recherche">
                     <input type="search" id="search" placeholder="Que voulez vous écouter ?"
-                        onKeyDown={(event) => {
-                            if (event.key === "Enter") searchMusic();
+                        onKeyDown={(event) => { // TODO Chargement 
+                            if (event.key === "Enter") chargement(), searchMusic();
                         }}
                     />
                     <svg onClick={searchMusic} width="24" height="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
