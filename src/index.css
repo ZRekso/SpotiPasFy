@@ -11,6 +11,7 @@
   --bg-nav-color: #363535fc;
   --bg-HomePage-tendance: #2c2c2e;
   --bg-HomePage-tendance-hover: #484848;
+  --border-modeSombre-clair: #2fd978;
 }
 
 :root[data-theme="clair"] {
@@ -21,6 +22,9 @@
   --bg-HomePage-tendance: #c5c3c3e3;
   --bg-HomePage-tendance-hover: #a19e9ee3;
   --bg-nav-laptob: #e4e2e2e3;
+  --border-modeclair: #000000;
+  --border-modeSombre-clair: none;
+
 }
 :root[data-theme="dark"] {
   --bg-color: black;
@@ -30,4 +34,5 @@
   --bg-HomePage-tendance: #2c2c2e;
   --bg-HomePage-tendance-hover: #484848;
   --bg-nav-laptob: #141414;
+  --border-modeSombre-clair: #2fd978;
 }
