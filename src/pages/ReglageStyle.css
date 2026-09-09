@@ -182,12 +182,6 @@
         text-decoration: underline;
     }
 
-    .Reglage .mentions-legales .dev-notice {
-        margin-top: 1rem;
-        color: #f59e0b;
-        font-style: italic;
-        font-size: 0.85rem;
-    }
     /* Profil */
 
     .Reglage section:nth-child(2),
@@ -262,6 +256,7 @@
         padding-right: 2.8rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        border: solid 1px var(--border-modeclair);
     }
 
     .container-blanc div:nth-child(2),
@@ -302,6 +297,7 @@
         padding-right: 2.8rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        border: 1px solid var(--border-modeSombre-clair);
     }
 
     .Reglage > section:nth-child(4){
@@ -359,12 +355,5 @@
 
     .Reglage .mentions-legales a:hover {
         text-decoration: underline;
-    }
-
-    .Reglage .mentions-legales .dev-notice {
-    margin-top: 1rem;
-    color: #f59e0b;
-    font-style: italic;
-    font-size: 0.85rem;
     }
 }

@@ -85,7 +85,6 @@ function ReglagePage() {
                     <p>© 2025 Nathan Salomé. Tous droits réservés.</p>
                     <p>Pour toute question, contactez-moi à :</p>
                     <p><a href="mailto:nathansalome.pro@outlook.com">nathansalome.pro@outlook.com</a></p>
-                    <p className="dev-notice">Thème de l'application en cours de développement...</p>
                 </div>
             </section>
             <nav>
