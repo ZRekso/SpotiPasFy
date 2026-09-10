@@ -6,21 +6,26 @@ function Recherche() {
     const navigate = useNavigate();
     const [resultats, setResultats] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [utilisateurSearch, setUtilisateurSearch] = useState(false);
 
     function searchMusic() {
         const input = document.getElementById("search").value;
         const url = "https://api.jamendo.com/v3.0/tracks?client_id=f8ac19b7&format=json&fuzzytags=" + input;
 
         setLoading(true);
+        
+
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 setResultats(data.results || []);
                 setLoading(false);
+                setUtilisateurSearch(true);
             })
             .catch(error => {
                 console.error("Erreur lors de la recherche :", error);
                 setLoading(false);
+                setUtilisateurSearch(true);
             });
     }
 
@@ -29,6 +34,40 @@ function Recherche() {
         return <p>Chargement...</p>
     }
 
+    function result(){
+
+        if(resultats.length === 0){
+            return <p>Aucun résultat</p>
+        }
+        else{
+            return (
+            resultats.map((album) => (
+                <div key={album.id} className="container-result-search" onClick={() => ouvrirAlbum({
+                    titre: album.name,
+                    auteur: album.artist_name,
+                    image: album.album_image,
+                    audio: album.audio,
+                })}>
+                    <img src={album.album_image} width="15%" alt={album.name} />
+                    <p>{album.name}</p>
+                </div>
+            )))
+        }
+
+        {/*  TEST  DEV AUCUN RESULTAT
+        {resultats.length === 0 ? <p>Aucun résultat</p> : resultats.map((album) => (
+                        <div key={album.id} className="container-result-search" onClick={() => ouvrirAlbum({
+                            titre: album.name,
+                            auteur: album.artist_name,
+                            image: album.album_image,
+                            audio: album.audio,
+                        })}>
+                            <img src={album.album_image} width="15%" alt={album.name} />
+                            <p>{album.name}</p>
+                        </div>
+                    ))}
+        */}        
+    }
 
     function ouvrirAlbum(album) {
         navigate("/Lecteur", { state: { album } });
@@ -46,6 +85,8 @@ function Recherche() {
         navigate("/Reglage")
     }
 
+
+    
     return (
         <div className="Recherche">
             <header>
@@ -64,17 +105,8 @@ function Recherche() {
                     </svg>
                 </div>
                 <div id="container-Search">
-                    {loading ? chargement() : resultats.map((album) => (
-                        <div key={album.id} className="container-result-search" onClick={() => ouvrirAlbum({
-                            titre: album.name,
-                            auteur: album.artist_name,
-                            image: album.album_image,
-                            audio: album.audio,
-                        })}>
-                            <img src={album.album_image} width="15%" alt={album.name} />
-                            <p>{album.name}</p>
-                        </div>
-                    ))}
+                    {loading && chargement()}
+                    {utilisateurSearch && result()}
                 </div>
             </section>
             <nav>
