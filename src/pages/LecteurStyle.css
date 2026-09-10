@@ -64,6 +64,7 @@ body {
 
     .Lecteur div:nth-child(3) h1{
         font-size: 1.9rem;
+        color: white;
     }
     /* Bar Audio */
 
@@ -82,7 +83,10 @@ body {
     }
 }
 
-
+.Lecteur div:nth-child(1) p,
+.Lecteur div:nth-child(1) h1{
+    color: white;
+}
 
 
 
