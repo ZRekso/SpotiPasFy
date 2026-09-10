@@ -5,24 +5,28 @@ import "./RechercheStyle.css";
 function Recherche() {
     const navigate = useNavigate();
     const [resultats, setResultats] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     function searchMusic() {
         const input = document.getElementById("search").value;
         const url = "https://api.jamendo.com/v3.0/tracks?client_id=f8ac19b7&format=json&fuzzytags=" + input;
 
+        setLoading(true);
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                setResultats(data.results);
+                setResultats(data.results || []);
+                setLoading(false);
             })
             .catch(error => {
                 console.error("Erreur lors de la recherche :", error);
+                setLoading(false);
             });
     }
 
     {/* TODO Chargement search */}
     function chargement(){
-        return <p>CHargement...</p>
+        return <p>Chargement...</p>
     }
 
 
@@ -34,7 +38,6 @@ function Recherche() {
         navigate("/home");
     }
 
-    {/* TODO Config + dev page parametre et recherche */}
     function recherche() {
         navigate("/Recherche");
     }
@@ -52,7 +55,7 @@ function Recherche() {
                 <div className="barre-recherche">
                     <input type="search" id="search" placeholder="Que voulez vous écouter ?"
                         onKeyDown={(event) => { // TODO Chargement 
-                            if (event.key === "Enter") chargement(), searchMusic();
+                            if (event.key === "Enter") searchMusic();
                         }}
                     />
                     <svg onClick={searchMusic} width="24" height="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
@@ -61,17 +64,17 @@ function Recherche() {
                     </svg>
                 </div>
                 <div id="container-Search">
-                {resultats.map((album) => (
-                    <div key={album.id} className="container-result-search" onClick={() => ouvrirAlbum({
-                        titre: album.name,
-                        auteur: album.artist_name,
-                        image: album.album_image,
-                        audio: album.audio,
-                    })}>
-                        <img src={album.album_image} width="15%" alt={album.name} />
-                        <p>{album.name}</p>
-                    </div>
-                ))}
+                    {loading ? chargement() : resultats.map((album) => (
+                        <div key={album.id} className="container-result-search" onClick={() => ouvrirAlbum({
+                            titre: album.name,
+                            auteur: album.artist_name,
+                            image: album.album_image,
+                            audio: album.audio,
+                        })}>
+                            <img src={album.album_image} width="15%" alt={album.name} />
+                            <p>{album.name}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
             <nav>
